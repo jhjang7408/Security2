@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>로그인 화면</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Include the Thymeleaf fragment for the header -->
+<!--<div th:replace="layout/header"></div>-->
+
+<h2>로그인 화면</h2>
+<form class="form-signin" method="post" action="/login/login-proc">
+
+    <input type="text" id="username" name="username" class="form-control" placeholder="아이디" autofocus=""/>
+    <input type="text" id="password" name="password" class="form-control" placeholder="비밀번호" />
+
+    <input id="joinBtn" type="submit" class="btn btn-secondary active" value="로그인" />
+    <a href="/login/join" class="btn btn-info active" role="button">회원가입</a>
+
+</form>
+
+<!-- Include the Thymeleaf fragment for the footer -->
+<!--<div th:replace="layout/footer"></div>-->
+
+</body>
+</html>

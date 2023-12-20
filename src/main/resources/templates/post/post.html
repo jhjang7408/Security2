@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>사용자 화면</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Include the Thymeleaf fragment for the header -->
+<!--<div th:replace="layout/header"></div>-->
+
+<h2>사용자 화면</h2>
+<p>사용자 권한 확인 용</p>
+
+<br/><br/><br/>
+
+<a href="/admins" class="btn btn-secondary active" role="button">관리자</a>
+<a href="/logout" class="btn btn-info active" role="button">Logout</a><!--스프링시큐리티에서 기본적으로 제공하는 로그아웃 url-->
+<span th:text="${user}"></span>
+
+<!-- Include the Thymeleaf fragment for the footer -->
+<!--<div th:replace="layout/footer"></div>-->
+
+</body>
+</html>
